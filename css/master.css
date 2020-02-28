@@ -73,8 +73,8 @@ header{
 .last_year_circles{
   flex: auto;
   width: 50%;
-  margin:0 auto;
-  display:block;
+  text-align: center;
+
 }
 
 .last_year_circles p{
@@ -88,7 +88,8 @@ header{
 
 .container{
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .container p{
@@ -179,14 +180,13 @@ footer p{
 
 @media (max-width: 670px){
 
-  .about_title_1 img{
-    width: 500px;
+  .about_title_1{
+    width: 80%;
     padding-top: 140px;
   }
 
-  .about_title_2 img{
-    height: 20px
-    padding-top: 140px;
+  .about_title_2{
+    width: 50%;
   }
 
 
@@ -199,5 +199,31 @@ footer p{
   .main_img img{
     width: 100%;
     padding-top: 110px;
+  }
+
+  .last_year_circles img{
+    width:40px;
+    padding-right: 30px;
+  }
+
+  .container p{
+    font-size: 20px;
+  }
+
+  .last_year_circles p{
+    font-size: 20px;
+  }
+
+  .last_year_circles{
+    flex: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .apply_btn img{
+    margin:0 auto;
+    display:block;
+    padding-top: 10px;
+    width:80%;
   }
 }
