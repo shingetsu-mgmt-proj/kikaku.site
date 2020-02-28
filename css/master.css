@@ -1,0 +1,203 @@
+body{
+  margin: 0;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
+}
+
+header{
+  height: 70px;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.menu{
+  float: left;
+  font-size: 0
+}
+
+.menu img{
+  padding-left: 25px;
+  padding-top: 23px;
+  padding-bottom: 0px;
+}
+
+.news{
+  background-color: #CE4444;
+  height: 40px;
+  width: 100%;
+  color: white;
+  display: inline-block;
+  position: fixed;
+  top: 70px;
+}
+
+.news p{
+  margin:0px;
+  padding-left: 25px;
+  padding-top: 10px;
+  font-family:sans-serif;
+}
+
+.main_img img{
+  width: 100%;
+  padding-top: 110px;
+}
+
+.about_kikaku{
+  background-color: #23AEE5;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin:0 auto;
+  display:block;
+}
+
+.about_kikaku p{
+  color: white;
+  padding-top: 50px
+}
+
+.about_title img{
+  margin:0 auto;
+  display:block;
+  padding-top: 20px;
+}
+
+.last_year{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto
+}
+
+.last_year_circles{
+  flex: auto;
+  width: 50%;
+  margin:0 auto;
+  display:block;
+}
+
+.last_year_circles p{
+  font-size: 40px;
+}
+
+.last_year_circles img{
+  width:128px;
+  padding-right: 70px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.container p{
+  font-size: 30px;
+}
+
+.invitation{
+  text-align: center;
+  font-size: 30px;
+}
+
+.apply_btn img{
+  margin:0 auto;
+  display:block;
+  padding-top: 10px;
+}
+
+footer{
+  height: 200px;
+  background-color: black;
+  margin-top: 50px;
+}
+
+footer p{
+  font-size: 20px;
+  color: white;
+  padding: 40px 0px 0px 40px;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.page_title{
+  height: 137px;
+  width: 100%;
+  background-color: #46B190;
+  margin-top: 70px;
+}
+
+.page_title img{
+  margin:0 auto;
+  display:block;
+  padding-top: 35px;
+}
+
+.schedule{
+  margin-top: 20px;
+}
+
+.schedule img{
+  margin:0 auto;
+  display:block;
+  padding-top: 10px;
+  width: 600px;
+}
+
+.schedule p{
+  font-size: 40px;
+  text-align: center;
+}
+
+.apply_process{
+  margin:0 auto;
+  display:block;
+  padding-top: 20px;
+}
+
+.line_title{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.line_accounts table{
+  border: none;
+  margin:0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.line_accounts th,td{
+  padding: 10px;
+  width: 200px;
+}
+
+.line_attention{
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (max-width: 670px){
+
+  .about_title_1 img{
+    width: 500px;
+    padding-top: 140px;
+  }
+
+  .about_title_2 img{
+    height: 20px
+    padding-top: 140px;
+  }
+
+
+  .about_title img{
+    margin:0 auto;
+    display:block;
+    padding-top: 20px;
+  }
+
+  .main_img img{
+    width: 100%;
+    padding-top: 110px;
+  }
+}
