@@ -1,0 +1,13 @@
+<Files ~ "\.(htaccess|htpasswd)$">
+
+deny from all
+
+</Files>
+
+ 
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ https://shingetsu-mgmt-proj.github.io/kikaku.site/index.html/$1 [R=301,L]
