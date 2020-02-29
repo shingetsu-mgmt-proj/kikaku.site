@@ -2,21 +2,23 @@
 
 body{
   margin: 0;
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
 }
 
 .paragraph{
   font-size: 30px;
+  font-family: "M PLUS 1p";
 }
 
 .big_paragraph{
   font-size: 35px;
   text-align: center;
+  font-family: "M PLUS 1p";
 }
 
 .invitation{
   font-size: 35px;
   text-align: center;
+  font-family: "M PLUS 1p";
 }
 
 
@@ -57,6 +59,7 @@ header{
   display: block;
   color: white;
   text-decoration: none;
+  font-family: "Sawarabi Mincho";
 }
 
 .main_img img{
@@ -99,6 +102,7 @@ header{
 
 .last_year_circles p{
   font-size: 30px;
+  font-family: "M PLUS 1p";
 }
 
 .last_year_circles img{
@@ -146,7 +150,7 @@ footer p{
   font-size: 20px;
   color: white;
   padding: 40px 0px 0px 40px;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  font-family: "Sawarabi Mincho";
 }
 
 .page_title{
@@ -180,9 +184,10 @@ footer p{
 }
 
 .line_title{
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  margin:0 auto;
+  display:block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .line_accounts table{
@@ -195,6 +200,7 @@ footer p{
 .line_accounts th,td{
   padding: 10px;
   width: 200px;
+  font-family: "Sawarabi Mincho";
 }
 
 .line_attention{
@@ -214,13 +220,13 @@ footer p{
 
 .news_date {
   font-size: 20px;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  font-family: "Sawarabi Mincho";
   margin: 10px 20px 0 20px;
 }
 
 .news_title {
   font-size: 40px;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  font-family: "Sawarabi Mincho";
   margin: 0 20px 0 20px;
 }
 
@@ -337,7 +343,7 @@ footer p{
   }
 
   .line_title{
-    font-size: 20px;
+    height: 30px;
   }
 
   .line_accounts td,th{
