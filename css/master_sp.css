@@ -1,0 +1,165 @@
+
+@media (max-width: 670px){
+
+  .wrapper{
+    position: relative;
+  }
+
+  header{
+    position: static;
+    height: 45px;
+  }
+
+  .header_sp{
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    z-index: 10;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .header_sp img{
+    width: 44px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu_sp{
+    height: 330px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 45px;
+    z-index: 10;
+  }
+
+  .menu_sp_btn img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 20px;
+  }
+
+
+  .news{
+    background-color: #CE4444;
+    height: 40px;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    position: static;
+  }
+
+  .main_img img{
+    width: 100%;
+    margin: 0px;
+    padding-top: 0px;
+  }
+
+  .about_title_1{
+    width: 80%;
+  }
+
+  .about_title_2{
+    width: 50%;
+  }
+
+
+  .about_title img{
+    margin:0 auto;
+    display:block;
+    padding-top: 20px;
+  }
+
+  .last_year_circles img{
+    width:40px;
+    padding-right: 30px;
+  }
+
+  .paragraph{
+    font-size: 20px;
+  }
+
+  .big_paragraph{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .invitation{
+    text-align: left;
+    font-size: 20px;
+  }
+
+
+  .last_year_circles p{
+    font-size: 20px;
+  }
+
+  .last_year_circles{
+    flex: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .apply_btn img{
+    margin:0 auto;
+    display:block;
+    padding-top: 10px;
+    width:80%;
+  }
+
+  footer p{
+    font-size: 10px;
+    color: white;
+    padding: 30px 0px 0px 30px;
+  }
+
+  .page_title{
+    margin-top: 0px;
+    height: 55px;
+  }
+
+  .page_title img{
+    height: 40px;
+    padding-top: 9px;
+  }
+
+  .schedule img{
+    width: 90%;
+  }
+
+  .line_title{
+    height: 30px;
+  }
+
+  .line_accounts td,th{
+    font-size: 20px;
+  }
+
+  .line_attention{
+    font-size: 20px;
+  }
+
+  .apply_process{
+    height: 30px;
+  }
+
+  .news_date{
+    font-size: 10px;
+  }
+
+  .news_title{
+    font-size: 25px;
+  }
+
+  .news_content{
+    font-size: 20px;
+  }
+
+
+}
