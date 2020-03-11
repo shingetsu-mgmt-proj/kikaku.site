@@ -30,11 +30,11 @@
   }
 
   .menu_sp{
-    height: 330px;
+    height: 380px;
     width: 100%;
     background-color: black;
     position: fixed;
-    top: 45px;
+    top: 44px;
     z-index: 10;
   }
 
@@ -55,11 +55,32 @@
     position: static;
   }
 
-  .main_img img{
-    width: 100%;
-    margin: 0px;
-    padding-top: 0px;
+  /* メイン画像PC */
+  .main_img_pc_bg{
+    display: none;
   }
+
+  .main_img_pc_title{
+    display: none;
+  }
+
+  /* メイン画像SP */
+  .main_img_sp_bg{
+    display: block;
+    width: 100%;
+    padding-top:;
+    position: relative;
+  }
+
+  .main_img_sp_title{
+    display: block;
+    position: absolute;
+    top:130px;
+    left: 30px;
+    z-index: 6;
+    width: 40%;
+  }
+
 
   .about_title_1{
     width: 80%;
@@ -149,6 +170,7 @@
     height: 30px;
   }
 
+/*ニュース*/
   .news_date{
     font-size: 10px;
   }
@@ -159,6 +181,30 @@
 
   .news_content{
     font-size: 20px;
+  }
+
+  .news_column span{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+  }
+
+  /*よくある質問*/
+  .faq_question p{
+    font-size: 30px;
+  }
+
+  .faq_answer p{
+    font-size: 20px;
+  }
+
+  .faq_question span{
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    color:#ccc;
+    font-size: 25px;
   }
 
 

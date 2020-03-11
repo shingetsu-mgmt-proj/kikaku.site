@@ -28,6 +28,7 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header_sp{
@@ -57,6 +58,8 @@ header{
   display: inline-block;
   position: fixed;
   top: 70px;
+  z-index: 10;
+
 }
 
 .news a{
@@ -70,10 +73,31 @@ header{
   font-family: "Sawarabi Mincho";
 }
 
-.main_img img{
+/* メイン画像PC */
+.main_img_pc_bg{
   width: 100%;
   padding-top: 110px;
+  position: relative;
 }
+
+.main_img_pc_title{
+  position: absolute;
+  top: 180px;
+  left: 60px;
+  z-index: 6;
+  width: 40%;
+}
+
+/* メイン画像SP */
+.main_img_sp_bg{
+  display: none;
+}
+
+.main_img_sp_title{
+  display: none;
+}
+
+
 
 .about_kikaku{
   background-color: #23AEE5;
@@ -216,6 +240,7 @@ footer p{
   font-size: 30px;
 }
 
+/* ニュース */
 .news_box{
   margin-top: 30px;
 }
@@ -224,6 +249,7 @@ footer p{
   border: 1px solid #707070;
 	width: 90%;
   margin: 0 auto 30px auto;
+  position: relative;
 }
 
 .news_date {
@@ -241,4 +267,45 @@ footer p{
 .news_content {
   font-size: 20px;
   margin: 0 20px 10px 20px;
+  display: none;
+}
+
+.news_column span{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color:#ccc;
+}
+
+
+/* よくある質問 */
+.faq_question{
+  font-size: 40px;
+  font-family: "Sawarabi Mincho";
+  margin: 30px auto 0 auto;
+  border-bottom: 1px solid #707070;
+  width: 90%;
+  position: relative;
+}
+
+.faq_question p{
+  margin: 0;
+  display: block;
+  width: 95%;
+}
+
+.faq_answer{
+  font-size: 20px;
+  margin: 0 20px 10px 20px;
+  width: 90%;
+  margin: 0 auto;
+  display: none;
+}
+
+.faq_question span{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color:#ccc;
 }
