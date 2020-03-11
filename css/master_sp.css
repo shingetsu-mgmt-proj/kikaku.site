@@ -56,15 +56,15 @@
   }
 
   /* メイン画像PC */
-  .main_img_pc_bg{
-    display: none;
-  }
-
-  .main_img_pc_title{
+  .main_img_pc{
     display: none;
   }
 
   /* メイン画像SP */
+  .main_img_sp{
+    display: block;
+  }
+
   .main_img_sp_bg{
     display: block;
     width: 100%;

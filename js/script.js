@@ -1,5 +1,34 @@
 
 $(function(){
+  $(document).ready( function(){
+    // ページ読み込み時に実行したい処理
+    $('.slider').slick({
+      autoplay:true,
+      autoplaySpeed:5000,
+    });
+
+    if($(".wrapper").hasClass("for_index")) {
+      $(".wrapper").hide();
+
+      var rotation = function (){
+        $("#loading").rotate({
+          angle:0,
+          animateTo:360,
+          callback: rotation
+        });
+      }
+      rotation();
+
+      setTimeout(function(){
+        $(".black_wall").fadeOut();
+        $("#loading").fadeOut();
+        $(".wrapper").show();
+      },1000);
+
+    };
+
+  });
+
   $(".header_sp").click(function(){
     $(".menu_sp").fadeIn();
   });
@@ -34,9 +63,6 @@ $(function(){
     }
   });
 
-});
 
-$('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:5000,
+
 });

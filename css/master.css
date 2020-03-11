@@ -1,8 +1,43 @@
+html,body { height:100%; }
 
+/*実験用*/
 
 body{
   margin: 0;
 }
+
+.black_wall{
+  background-color: white;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+#loading img{
+  z-index: 21;
+  width:100px;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+
 
 .paragraph{
   font-size: 30px;
@@ -89,15 +124,9 @@ header{
 }
 
 /* メイン画像SP */
-.main_img_sp_bg{
+.main_img_sp{
   display: none;
 }
-
-.main_img_sp_title{
-  display: none;
-}
-
-
 
 .about_kikaku{
   background-color: #23AEE5;
