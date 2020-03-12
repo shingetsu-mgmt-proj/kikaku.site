@@ -2,10 +2,6 @@
 $(function(){
   $(document).ready( function(){
     // ページ読み込み時に実行したい処理
-    $('.slider').slick({
-      autoplay:true,
-      autoplaySpeed:5000,
-    });
 
     if($(".wrapper").hasClass("for_index")) {
       $(".wrapper").hide();
@@ -23,9 +19,12 @@ $(function(){
         $(".black_wall").fadeOut();
         $("#loading").fadeOut();
         $(".wrapper").show();
+        $('.slider').slick('setPosition');
       },1000);
 
+
     };
+
 
   });
 
@@ -63,6 +62,14 @@ $(function(){
     }
   });
 
+  $('.slider').slick('setPosition');
 
 
+
+
+});
+
+$('.slider').slick({
+  autoplay:true,
+  autoplaySpeed:3000,
 });

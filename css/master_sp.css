@@ -61,6 +61,10 @@
   }
 
   /* メイン画像SP */
+  .slider{
+    width: 100%;
+  }
+
   .main_img_sp{
     display: block;
   }
