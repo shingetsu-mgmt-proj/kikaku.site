@@ -1,13 +1,17 @@
 html,body { height:100%; }
 
-/*実験用*/
+html{
+  overflow-x: auto;
+}
+
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 .black_wall{
-  background-color: white;
+  background-color: #1E3C91;
   z-index: 20;
   width: 100%;
   height: 100%;
@@ -41,19 +45,19 @@ body{
 
 .paragraph{
   font-size: 30px;
-  font-family: "M PLUS 1p";
+  font-family: "Noto Sans JP";
 }
 
 .big_paragraph{
   font-size: 35px;
   text-align: center;
-  font-family: "M PLUS 1p";
+  font-family: "Noto Sans JP";
 }
 
 .invitation{
   font-size: 35px;
   text-align: center;
-  font-family: "M PLUS 1p";
+  font-family: "Noto Sans JP";
 }
 
 
@@ -81,8 +85,11 @@ header{
 
 .menu img{
   padding-left: 25px;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 0px;
+  height: 15px;
+  background-color: black;
+
 }
 
 .news{
@@ -110,13 +117,15 @@ header{
 
 /* メイン画像PC */
 .slider{
-  width: 100%;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .main_img_pc_bg{
   width: 100%;
   padding-top: 110px;
   position: relative;
+
 }
 
 .main_img_pc_title{
@@ -167,7 +176,7 @@ header{
 
 .last_year_circles p{
   font-size: 30px;
-  font-family: "M PLUS 1p";
+  font-family: "Noto Sans JP";
 }
 
 .last_year_circles img{
@@ -333,7 +342,9 @@ footer p{
   margin: 0 20px 10px 20px;
   width: 90%;
   margin: 0 auto;
+  font-family: "Noto Sans JP";
   display: none;
+
 }
 
 .faq_question span{

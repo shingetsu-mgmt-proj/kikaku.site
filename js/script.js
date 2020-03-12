@@ -66,7 +66,6 @@ $(function(){
 
 
 
-
 });
 
 $('.slider').slick({
