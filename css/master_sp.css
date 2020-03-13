@@ -154,22 +154,43 @@
     padding-top: 9px;
   }
 
+  .page_title_mini{
+    font-size: 30px;
+    font-family: "Sawarabi Mincho";
+    text-align: left;
+    border-bottom: solid 2px orange;
+  }
+
+  .page_title_mini span{
+    font-size: 15px;
+  }
+
+
   .schedule img{
     width: 90%;
   }
 
+/*お問い合わせ*/
   .line_title{
     height: 30px;
   }
 
   .line_accounts td,th{
     font-size: 20px;
+    padding: 5px;
+    width: 100px;
   }
+
+  .line_accounts img{
+    width: 90px;
+  }
+
 
   .line_attention{
     font-size: 20px;
   }
 
+/*申し込み*/
   .apply_process{
     height: 30px;
   }
