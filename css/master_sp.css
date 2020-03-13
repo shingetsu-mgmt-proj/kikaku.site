@@ -191,8 +191,11 @@
   }
 
 /*申し込み*/
-  .apply_process{
-    height: 30px;
+
+  .apply_schedule{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
   }
 
 /*ニュース*/
@@ -216,15 +219,15 @@
   }
 
   /*よくある質問*/
-  .faq_question p{
+  .faq_question p, .apply_list p{
     font-size: 30px;
   }
 
-  .faq_answer p{
+  .faq_answer p, .apply_list p{
     font-size: 20px;
   }
 
-  .faq_question span{
+  .faq_question span, .op_cl{
     position: absolute;
     top: 2px;
     right: 3px;

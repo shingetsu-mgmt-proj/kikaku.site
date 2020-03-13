@@ -244,7 +244,7 @@ footer p{
   font-size: 40px;
   font-family: "Sawarabi Mincho";
   text-align: center;
-  border-bottom: solid 2px orange;
+  border-bottom: solid 5px orange;
 }
 
 .page_title_mini span{
@@ -262,10 +262,15 @@ footer p{
   width: 600px;
 }
 
-.apply_process{
-  margin:0 auto;
-  display:block;
-  padding-top: 20px;
+/*申し込み*/
+.apply{
+  padding-bottom: 40px;
+}
+
+.apply_schedule{
+  margin: 0 auto;
+  display: block;
+  width: 70%;
 }
 
 /* お問い合わせ */
@@ -333,8 +338,8 @@ footer p{
 }
 
 
-/* よくある質問 */
-.faq_question{
+/* よくある質問・申し込み */
+.faq_question, .apply_list{
   font-size: 40px;
   font-family: "Sawarabi Mincho";
   margin: 30px auto 0 auto;
@@ -343,13 +348,13 @@ footer p{
   position: relative;
 }
 
-.faq_question p{
+.faq_question p, .apply_list p{
   margin: 0;
   display: block;
   width: 95%;
 }
 
-.faq_answer{
+.faq_answer, .apply_process{
   font-size: 20px;
   margin: 0 20px 10px 20px;
   width: 90%;
@@ -359,7 +364,7 @@ footer p{
 
 }
 
-.faq_question span{
+.faq_question span, .op_cl{
   position: absolute;
   top: 5px;
   right: 5px;
