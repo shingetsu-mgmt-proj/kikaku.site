@@ -76,6 +76,138 @@ $(function(){
     }
   });
 
+  $("#select_kikaku").click(function(){
+    var $kikaku = $(".apply_kikaku");
+    var $mogi = $(".apply_mogi");
+    $(".please_select").slideUp();
+    if(!$kikaku.hasClass("active")){
+      if($mogi.hasClass("active")){
+        $mogi.hide();
+        $mogi.removeClass("active");
+        $kikaku.show();
+        $kikaku.addClass("active");
+        $("#select_mogi").css({
+          'background-color':'white',
+          'color':'#808080',
+          'border':'solid #808080 1px'
+        });
+        $("#select_kikaku").css({
+          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px'
+        });
+      } else {
+        $kikaku.slideDown();
+        $kikaku.addClass("active");
+        $("#select_kikaku").css({
+            'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px'
+        });
+      }
+    };
+  });
+
+  $("#select_mogi").click(function(){
+    var $kikaku = $(".apply_kikaku");
+    var $mogi = $(".apply_mogi");
+    $(".please_select").slideUp();
+    if(!$mogi.hasClass("active")){
+      if($kikaku.hasClass("active")){
+        $kikaku.hide();
+        $kikaku.removeClass("active");
+        $mogi.show();
+        $mogi.addClass("active");
+        $("#select_kikaku").css(
+{          'background-color':'white',
+          'color':'#808080',
+          'border':'solid #808080 1px',
+}        );
+        $("#select_mogi").css(
+{          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px',
+}        );
+      } else {
+        $mogi.slideDown();
+        $mogi.addClass("active");
+        $("#select_mogi").css(
+{          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px',
+}        );
+      }
+    };
+  });
+
+
+
+  $("#select_kikaku").click(function(){
+    var $kikaku = $(".faq_kikaku");
+    var $mogi = $(".faq_mogi");
+    $(".please_select").slideUp();
+    if(!$kikaku.hasClass("active")){
+      if($mogi.hasClass("active")){
+        $mogi.hide();
+        $mogi.removeClass("active");
+        $kikaku.show();
+        $kikaku.addClass("active");
+        $("#select_mogi").css({
+          'background-color':'white',
+          'color':'#808080',
+          'border':'solid #808080 1px'
+        });
+        $("#select_kikaku").css({
+          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px'
+        });
+      } else {
+        $kikaku.slideDown();
+        $kikaku.addClass("active");
+        $("#select_kikaku").css({
+            'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px'
+        });
+      }
+    };
+  });
+
+  $("#select_mogi").click(function(){
+    var $kikaku = $(".faq_kikaku");
+    var $mogi = $(".faq_mogi");
+    $(".please_select").slideUp();
+    if(!$mogi.hasClass("active")){
+      if($kikaku.hasClass("active")){
+        $kikaku.hide();
+        $kikaku.removeClass("active");
+        $mogi.show();
+        $mogi.addClass("active");
+        $("#select_kikaku").css(
+{          'background-color':'white',
+          'color':'#808080',
+          'border':'solid #808080 1px',
+}        );
+        $("#select_mogi").css(
+{          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px',
+}        );
+      } else {
+        $mogi.slideDown();
+        $mogi.addClass("active");
+        $("#select_mogi").css(
+{          'background-color':'#def7f9',
+          'color':'#1b3988',
+          'border':'solid #1b3988 1px',
+}        );
+      }
+    };
+  });
+
+
+
   $('.slider').slick('setPosition');
 
 

@@ -3,6 +3,7 @@
 
   .wrapper{
     position: relative;
+    padding-bottom: 150px;
   }
 
   header{
@@ -86,20 +87,23 @@
   }
 
 
-  .about_title_1{
+  #about_title_1{
     width: 80%;
   }
 
-  .about_title_2{
-    width: 50%;
+  .about_mogi_and_kikaku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-
-  .about_title img{
-    margin:0 auto;
-    display:block;
-    padding-top: 20px;
+  .about_mogi_and_kikaku img{
+    display: block;
+    width:100%;
+    margin: 20px;
+    flex: auto;
   }
+
 
   .last_year_circles img{
     width:40px;
@@ -113,6 +117,10 @@
   .big_paragraph{
     font-size: 30px;
     text-align: center;
+  }
+
+  .paragraph_serif{
+    font-size: 17px;
   }
 
   .invitation{
@@ -138,10 +146,15 @@
     width:80%;
   }
 
-  footer p{
-    font-size: 10px;
-    color: white;
-    padding: 30px 0px 0px 30px;
+  footer{
+    height: 120px;
+  }
+
+  footer img{
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 20px 0px 0px 20px;
   }
 
   .page_title{
@@ -171,23 +184,19 @@
   }
 
 /*お問い合わせ*/
-  .line_title{
-    height: 30px;
+  .inquiry_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .line_accounts td,th{
-    font-size: 20px;
-    padding: 5px;
-    width: 100px;
-  }
-
-  .line_accounts img{
-    width: 90px;
-  }
-
-
-  .line_attention{
-    font-size: 20px;
+  .inquiry_btn{
+    flex: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 25px;
+    line-height:50px;
   }
 
 /*申し込み*/
@@ -196,6 +205,25 @@
     margin: 0 auto;
     display: block;
     width: 100%;
+  }
+
+  .please_select{
+
+  }
+
+  .select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #select_mogi,#select_kikaku{
+    flex: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 25px;
+    line-height:50px;
   }
 
 /*ニュース*/

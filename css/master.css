@@ -40,11 +40,23 @@ body{
   margin: auto;
 }
 
-
-
 .paragraph{
   font-size: 30px;
   font-family: "Noto Sans JP";
+}
+
+.center{
+  text-align: center;
+}
+
+.paragraph_serif{
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  text-align: center;
+}
+
+.paragraph span{
+  color: Red;
 }
 
 .big_paragraph{
@@ -161,6 +173,10 @@ header{
   padding-top: 20px;
 }
 
+#about_title_2{
+  width: 100%;
+}
+
 .last_year{
   display: flex;
   flex-wrap: wrap;
@@ -180,8 +196,20 @@ header{
 }
 
 .last_year_circles img{
-  width:128px;
-  padding-right: 70px;
+  width:100%;
+  margin-right: 70px;
+}
+
+/*模擬と企画の違いについて*/
+.about_mogi_and_kikaku{
+  display: flex;
+  justify-content: center;
+}
+
+.about_mogi_and_kikaku img{
+  display: block;
+  width:50%;
+  margin: 20px;
 }
 
 .container{
@@ -190,11 +218,6 @@ header{
   max-width: 800px;
 
 }
-
-.container p{
-
-}
-
 
 .apply_btn img{
   margin:0 auto;
@@ -206,25 +229,22 @@ header{
 .wrapper{
   min-height: 100vh;
   position: relative;/*←相対位置*/
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
 
 footer{
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: black;
-  margin-top: 50px;
   position: absolute;/*←絶対位置*/
   bottom: 0; /*下に固定*/
 }
 
-footer p{
-  font-size: 20px;
-  color: white;
+footer img{
+  height: 100px;
   padding: 40px 0px 0px 40px;
-  font-family: "Sawarabi Mincho";
 }
 
 .page_title{
@@ -263,6 +283,34 @@ footer p{
 }
 
 /*申し込み*/
+.please_select{
+  margin-top:30px;
+}
+
+.select{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#select_mogi,#select_kikaku{
+  width: 30%;
+  height: 80px;
+  line-height:80px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  background-color: white;
+  color:#808080;
+  border:solid #808080 1px;
+
+}
+
+.apply_kikaku,.apply_mogi{
+  display: none;
+}
+
 .apply{
   padding-bottom: 40px;
 }
@@ -274,30 +322,32 @@ footer p{
 }
 
 /* お問い合わせ */
-.line_title{
-  margin:0 auto;
-  display:block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.inquiry_form{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
-.line_accounts table{
-  border: none;
-  margin:0 auto;
-  font-size: 30px;
+.inquiry_btn{
+  width: 30%;
+  height: 80px;
+  line-height:80px;
+  margin: 0 auto;
+  display: block;
   text-align: center;
+  font-size: 35px;
+  background-color: black;
+  color:white;
 }
 
-.line_accounts th,td{
-  padding: 10px;
-  width: 200px;
+.inquiry_btn a{
+  display: block;
+  color: white;
+  text-decoration: none;
   font-family: "Sawarabi Mincho";
 }
 
-.line_attention{
-  text-align: center;
-  font-size: 30px;
-}
 
 /* ニュース */
 .news_box{
@@ -339,6 +389,10 @@ footer p{
 
 
 /* よくある質問・申し込み */
+.faq_kikaku,.faq_mogi{
+  display: none;
+}
+
 .faq_question, .apply_list{
   font-size: 40px;
   font-family: "Sawarabi Mincho";
