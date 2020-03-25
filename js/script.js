@@ -206,6 +206,15 @@ $(function(){
     };
   });
 
+  $("#jump_to_difference").click(function(){
+    var position = $("#jump").offset().top;
+    $('html,body').animate({
+      'scrollTop':position
+    },{
+      queue : false
+    });
+  });
+
 
 
   $('.slider').slick('setPosition');
