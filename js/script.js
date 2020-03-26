@@ -30,10 +30,12 @@ $(function(){
 
   $(".header_sp").click(function(){
     $(".menu_sp").fadeIn();
+    $(".menu_sp").addClass("sp_menu_active")
   });
 
   $("#menu_close_btn").click(function(){
     $(".menu_sp").fadeOut();
+    $(".menu_sp").removeClass("sp_menu_active");
   });
 
   $(".faq_list").click(function(){
@@ -208,6 +210,10 @@ $(function(){
 
   $("#jump_to_difference").click(function(){
     var position = $("#jump").offset().top;
+    if($(".menu_sp").hasClass("sp_menu_active")){
+      $(".menu_sp").fadeOut();
+      $(".menu_sp").removeClass("sp_menu_active");
+    };
     $('html,body').animate({
       'scrollTop':position
     },{
