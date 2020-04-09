@@ -206,9 +206,23 @@
     height: 55px;
   }
 
+  .page_title p{
+    font-size: 20px;
+    line-height: 55px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+
+  }
+
+
   .page_title img{
     height: 40px;
     padding-top: 9px;
+  }
+
+  .mini_title{
+    font-size: 20px;
   }
 
   .page_title_mini{
@@ -273,6 +287,17 @@
   .google_c img{
     width: 90%;
   }
+
+  .link_btn_black{
+    font-size: 20px;
+  }
+
+  .tutotial_keynote{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
 
 /*ニュース*/
   .news_date{

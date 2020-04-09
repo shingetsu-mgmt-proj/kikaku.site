@@ -2,7 +2,7 @@
 <html lang="jp" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>お問い合わせ|企画模擬店site</title>
+    <title>申し込み方法|企画模擬店site</title>
     <link rel="stylesheet" href="css/master.css">
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <link rel="icon" href="site_logo.ico">
+    <script
+      src="https://scripts.v1.authpack.io/index.js"
+      data-key="wga-client-key-29793dd9a96eda9a7e556adaa">
+    </script>
 
   </head>
   <body>
@@ -68,33 +72,50 @@
 
 
       <div class="page_title">
-        <p>お問い合わせ</p>
+        <p>申し込み</p>
       </div>
 
       <div class="container">
         <div class="please_select paragraph_serif">
-          お問い合わせ先を選んでください
+          いずれかを選択してください
         </div>
-
-        <div class="inquiry_form">
-          <div class="inquiry_btn" id="inquiry_kikaku_btn">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSbPRvMasYYaiVECASd0ldIq7re9XLhX6StsHxxQa_-PsGrw/viewform?usp=sf_link" target="_blank">企画部</a>
+        <div class="select">
+          <div id="select_kikaku">
+            企画
           </div>
-
-          <div class="inquiry_btn" id="inquiry_mogi_btn">
-            <a href="#" target="_blank">模擬店部</a>
+          <div id="select_mogi">
+            模擬店
           </div>
         </div>
 
-        <div class="paragraph center mini">
-          <p>※GoogleFormへリンクしています</p>
+        <div class="please_select_2 paragraph_serif">
+          いずれかを選択してください
         </div>
 
-        <div class="paragraph">
-          <p>出展を決定された方も、<br>検討中の方もお気軽にご相談ください!</p>
-          <p>考えている企画や売りたい食品が大学祭で出展・販売が可能かどうかなどの個別の質問ももちろん受け付けております。
-            各種説明会で直接ご質問していただくことが可能ですが、ご多忙の場合は是非お問合せフォームからお問い合わせお願いいたします。</p>
+        <!--企画部キャンパス？-->
+        <div class="select apply_kikaku">
+            <div class="login_btn">
+              <button data-authpack="open">ログイン・初回登録</button>
+            </div>
+          </div>
         </div>
+
+        <!--模擬店部キャンパス？-->
+        <div class="select apply_mogi">
+          <div id="select_sanda">
+            神戸三田キャンパス
+            <a class="select_campus_btn" href="online_apply/sanda.html"></a>
+          </div>
+          <div id="select_gahara">
+            西宮上ケ原キャンパス
+            <a class="select_campus_btn" href="online_apply/sanda.html"></a>
+          </div>
+          <div id="select_seiwa">
+            西宮聖和キャンパス
+            <a class="select_campus_btn" href="online_apply/sanda.html"></a>
+          </div>
+        </div>
+
 
       </div>
 

@@ -268,6 +268,18 @@ footer{
   width: 100%;
   background-color: #46B190;
   margin-top: 70px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  color: white;
+}
+
+.page_title p{
+  font-size: 40px;
+  line-height: 100px;
+  color: white;
+  margin: 0 auto;
+  display: block;
 }
 
 .page_title img{
@@ -299,14 +311,20 @@ footer{
 }
 
 /*申し込み*/
-.please_select{
+.please_select,.please_select_2{
   margin-top:30px;
+}
+
+.please_select_2{
+  display: none;
 }
 
 .select{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 #select_mogi,#select_kikaku{
@@ -321,6 +339,44 @@ footer{
   color:#808080;
   border:solid #808080 1px;
 
+}
+
+#select_sanda,#select_gahara,#select_seiwa{
+  width: 100%;
+  height: 80px;
+  line-height:80px;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  background-color: white;
+  color:#808080;
+  border:solid #808080 1px;
+
+
+}
+
+.select a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+}
+
+.bullet{
+  margin: 5px 0 5px 0;
+  border: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+.bullet p{
+  margin: 0 20px 0 10px;
+  display: block;
 }
 
 .apply_kikaku,.apply_mogi{
@@ -345,6 +401,81 @@ footer{
 
 .google_c img{
   width: 50%;
+}
+
+.link_btn_black{
+  width: 100%;
+  height: 70px;
+  line-height:70px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  background-color: black;
+  position: relative;
+}
+
+.link_btn_black p{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: "Sawarabi Mincho";
+}
+
+.link_btn_black a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+}
+
+button{
+  background-color: white;
+  border:solid #808080 1px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.welcome{
+  margin-top: 15px;
+  font-family: "Sawarabi Mincho";
+  font-size: 25px;
+}
+
+.mini_title{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+}
+
+.mini_title p{
+  padding-left: 10px;
+  margin:10px 0px 10px 20px;
+  display: block;
+  border-left: solid white 3px;
+  font-family: "Sawarabi Mincho";
+
+}
+
+.apply_kikaku_campus_btn{
+  display: none;
+}
+
+.tutotial_keynote{
+  display: block;
+  margin: 0 auto;
+  width:
 }
 
 /* お問い合わせ */

@@ -82,6 +82,7 @@ $(function(){
     var $kikaku = $(".apply_kikaku");
     var $mogi = $(".apply_mogi");
     $(".please_select").slideUp();
+    $(".please_select_2").slideDown();
     if(!$kikaku.hasClass("active")){
       if($mogi.hasClass("active")){
         $mogi.hide();
@@ -114,6 +115,7 @@ $(function(){
     var $kikaku = $(".apply_kikaku");
     var $mogi = $(".apply_mogi");
     $(".please_select").slideUp();
+    $(".please_select_2").slideDown();
     if(!$mogi.hasClass("active")){
       if($kikaku.hasClass("active")){
         $kikaku.hide();
