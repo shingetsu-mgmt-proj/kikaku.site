@@ -25,6 +25,12 @@ $(function(){
 
     };
 
+    //開いた画面の高さを取得
+    var WindowHeight = $(window).height();
+    var Height = WindowHeight - 70; //WindowHeightは変数で任意の名前
+    $('.wrapper').css('min-height',Height+'px');
+
+
 
   });
 
