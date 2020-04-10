@@ -31,17 +31,31 @@
   }
 
   .menu_sp{
-    height: 380px;
-    width: 100%;
-    background-color: black;
+    height: 500px;
+    width: 100vw;
+    background:rgba(0,0,0,0.95);
     position: fixed;
-    top: 44px;
+    top: 0px;
     z-index: 10;
+    opacity: 0.9;
   }
 
   .menu_sp_btns{
     display: flex;
     flex-wrap: wrap;
+    font-family: a-otf-ryumin-pr6n, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
+
+  }
+
+  .menu_sp_btns a{
+    text-decoration: none;
+    color: white;
   }
 
   .menu_sp_blank{
@@ -49,10 +63,17 @@
     width: 100%;
   }
 
+  .menu_sp_blank_top{
+    height: 100px;
+    width: 100%;
+
+  }
+
   .menu_sp_btn img{
     display: block;
     height: 20px;
     margin-right: 5px;
+    padding-top: 5px;
   }
 
   .menu_sp_btn{
@@ -151,6 +172,12 @@
   .paragraph_serif{
     font-size: 17px;
   }
+
+  .fukidashi{
+    width:80%;
+    display: block;
+  }
+
 
   .invitation{
     text-align: left;

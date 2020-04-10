@@ -8,17 +8,27 @@
     <link rel="stylesheet" href="css/master_sp.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="js/slick.css" rel="stylesheet" type="text/css">
 
 
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/jQueryRotate.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <link rel="icon" href="site_logo.ico">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'afy0jmj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
   </head>
+
   <body>
     <div class="black_wall">
       <div id="loading">
@@ -28,17 +38,13 @@
 
     <div class="wrapper for_index">
 
-
       <header>
-        <div class="logo">
-
-        </div>
         <div class="menu">
-          <a id="jump_to_difference"><img src="pic/menu/1.png" alt=""></a>
-          <a href="about"><img src="pic/menu/2.png" alt=""></a>
-          <a href="apply"><img src="pic/menu/3.png" alt=""></a>
-          <a href="faq"><img src="pic/menu/4.png" alt=""></a>
-          <a href="inquiry"><img src="pic/menu/5.png" alt=""></a>
+          <a id="jump_to_difference" class="menu_btn">トップ/企画・模擬店とは<div class="menu_eng">Top</div></a>
+          <a href="about" class="menu_btn">新月祭について<div class="menu_eng">About Shingetsu-fes</div></a>
+          <a href="apply" class="menu_btn">申し込み<div class="menu_eng">Apply</div></a>
+          <a href="faq" class="menu_btn">よくある質問<div class="menu_eng">FAQ</div></a>
+          <a href="inquiry" class="menu_btn">お問い合わせ<div class="menu_eng">Inqury</div></a>
         </div>
       </header>
 
@@ -48,29 +54,29 @@
 
       <div class="menu_sp">
         <div class="menu_sp_btns">
-          <div class="menu_sp_blank"></div>
+          <div class="menu_sp_blank_top"></div>
           <div id="jump_to_difference" class="menu_sp_btn">
-            <a><img src="pic/menu/1i.png" alt=""><img src="pic/menu/1.png" alt=""></a>
+            <a><img src="pic/menu/1i.png" alt="">トップ/企画・模擬店とは</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="about"><img src="pic/menu/2i.png" alt=""><img src="pic/menu/2.png" alt=""></a>
+            <a href="about"><img src="pic/menu/2i.png" alt="">新月祭について</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="apply"><img src="pic/menu/3i.png" alt=""><img src="pic/menu/3.png" alt=""></a>
+            <a href="apply"><img src="pic/menu/3i.png" alt="">申し込み</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="faq"><img src="pic/menu/4i.png" alt=""><img src="pic/menu/4.png" alt=""></a>
+            <a href="faq"><img src="pic/menu/4i.png" alt="">よくある質問</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="inquiry"><img src="pic/menu/5i.png" alt=""><img src="pic/menu/5.png" alt=""></a>
+            <a href="inquiry"><img src="pic/menu/5i.png" alt="">お問い合わせ</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
@@ -82,7 +88,11 @@
       </div>
 
       <div class="news">
-        <a href="news">ニュース：模擬店部の情報を追加しました</a>
+        <div class="latest_news">
+          ニュース：模擬店部の情報を追加しました
+          <a href="news"></a>
+        </div>
+
       </div>
 
 
@@ -107,18 +117,40 @@
         <div class="container">
 
           <div class="about_title">
-            <img id="about_title_1" src="pic/index/title.png" alt="">
-            <img id="about_title_2" src="pic/last_year/difference.png" alt="">
+            <div class="big_title center">
+              一般参加企画団体募集中
+            </div>
           </div>
+
+          <img class="fukidashi left" src="pic/index/omoide.png" alt="">
+          <img class="fukidashi right" src="pic/index/hirou.png" alt="">
+
+          <div class="big_title3 center">
+            →新月祭がピッタリ！
+          </div>
+        </div>
+
+          <div class="big_title4">
+            <div class="container box">
+              <div class="big_title2">
+                Q.企画と模擬の違いとは？
+              </div>
+            </div>
+          </div>
+
+        <div class="container">
 
           <div class="about_mogi_and_kikaku">
             <img src="pic/last_year/about_mogi.png" alt="">
             <img src="pic/last_year/about_kikaku.png" alt="">
           </div>
 
-          <p class="paragraph_serif">A. 出展内容によって区別されます。<br>大まかには、食品を販売するのが模擬店で<br>それ以外が企画となります。</p>
+          <p class="paragraph_serif"><span>A. </span><br>出展内容によって区別されます。<br>大まかには、食品を販売するのが模擬店でそれ以外が企画となります。</p>
 
-          <p class="invitation">このような団体以外にも様々な種のパフォーマンス・展示団体を募集しています。今まで大学祭にはなかったような企画をお持ちの方、ぜひ企画部までご相談ください。</p>
+          <p class="paragraph_serif">企画部ではこのような団体以外にも様々な種のパフォーマンス・展示団体を募集しています。<span>今まで大学祭にはなかったような企画</span>をお持ちの方、ぜひ企画部までご相談ください。</p>
+
+          <p class="paragraph_serif">模擬店部ではサークル、大規模団体だけではなく少人数での出展も歓迎しております。<span>こんなの作れる？</span>、そんなときはぜひ模擬店部までご相談ください。</p>
+
 
           <div id="apply_position" class="apply_btn">
             <a href="apply">

@@ -8,8 +8,17 @@
     content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/master_sp.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'afy0jmj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <link rel="icon" href="site_logo.ico">
 
   </head>
@@ -19,11 +28,11 @@
 
       <header>
         <div class="menu">
-          <a href="index"><img src="pic/menu/1.png" alt=""></a>
-          <a href="about"><img src="pic/menu/2.png" alt=""></a>
-          <a href="apply"><img src="pic/menu/3.png" alt=""></a>
-          <a href="faq"><img src="pic/menu/4.png" alt=""></a>
-          <a href="inquiry"><img src="pic/menu/5.png" alt=""></a>
+          <a href="index" class="menu_btn">トップ/企画・模擬店とは<div class="menu_eng">Top</div></a>
+          <a href="about" class="menu_btn">新月祭について<div class="menu_eng">About Shingetsu-fes</div></a>
+          <a href="apply" class="menu_btn">申し込み<div class="menu_eng">Apply</div></a>
+          <a href="faq" class="menu_btn">よくある質問<div class="menu_eng">FAQ</div></a>
+          <a href="inquiry" class="menu_btn">お問い合わせ<div class="menu_eng">Inqury</div></a>
         </div>
       </header>
 
@@ -33,29 +42,29 @@
 
       <div class="menu_sp">
         <div class="menu_sp_btns">
-          <div class="menu_sp_blank"></div>
-          <div class="menu_sp_btn">
-            <a href="index"><img src="pic/menu/1i.png" alt=""><img src="pic/menu/1.png" alt=""></a>
+          <div class="menu_sp_blank_top"></div>
+          <div  class="menu_sp_btn">
+            <a href="index"><img src="pic/menu/1i.png" alt="">トップ/企画・模擬店とは</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="about"><img src="pic/menu/2i.png" alt=""><img src="pic/menu/2.png" alt=""></a>
+            <a href="about"><img src="pic/menu/2i.png" alt="">新月祭について</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="apply"><img src="pic/menu/3i.png" alt=""><img src="pic/menu/3.png" alt=""></a>
+            <a href="apply"><img src="pic/menu/3i.png" alt="">申し込み</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="faq"><img src="pic/menu/4i.png" alt=""><img src="pic/menu/4.png" alt=""></a>
+            <a href="faq"><img src="pic/menu/4i.png" alt="">よくある質問</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
           <div class="menu_sp_btn">
-            <a href="inquiry"><img src="pic/menu/5i.png" alt=""><img src="pic/menu/5.png" alt=""></a>
+            <a href="inquiry"><img src="pic/menu/5i.png" alt="">お問い合わせ</a>
           </div>
 
           <div class="menu_sp_blank"> </div>
@@ -65,7 +74,6 @@
 
         </div>
       </div>
-
 
       <div class="page_title">
         <p>お問い合わせ</p>

@@ -229,6 +229,39 @@ $(function(){
     });
   });
 
+  $(".menu_btn").hover(
+    function(){
+      $(this).animate({
+        'background-color':'yellow',
+        'color':'black'
+      },500);
+      $(this).find('.menu_eng').fadeIn();
+    },function(){
+      $(this).animate({
+        'background-color':'black',
+        'color':'white'
+      },1000);
+      $('.menu_eng').fadeOut();
+    }
+  );
+
+  $(".latest_news").hover(
+    function(){
+      $(this).animate({
+        'background-color':'rgba(255,255,255,0.8)',
+        'color':'black'
+      },500);
+      $(this).find('.menu_eng').fadeIn();
+    },function(){
+      $(this).animate({
+        'background-color':'#CE4444',
+        'color':'white'
+      },1000);
+      $('.menu_eng').fadeOut();
+    }
+  );
+
+
 
 
   $('.slider').slick('setPosition');

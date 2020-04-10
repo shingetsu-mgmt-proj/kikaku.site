@@ -8,7 +8,9 @@ html{
 body{
   margin: 0;
   overflow-x: hidden;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .black_wall{
@@ -43,11 +45,14 @@ body{
 
 .paragraph{
   font-size: 30px;
-  font-family: "Noto Sans JP";
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .center{
   text-align: center;
+  margin: 0 auto;
 }
 
 .mini{
@@ -55,9 +60,101 @@ body{
 }
 
 .paragraph_serif{
-  font-size: 30px;
-  font-family: "Sawarabi Mincho";
+  font-size: 25px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.paragraph_serif span{
+  color: red;
+}
+
+.big_title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  width: 100%;
+  font-size: 7vh;
+}
+
+.big_title2{
+  display: block;
+  width: 100%;
+  font-size: 5vh;
+  display: flex;
+}
+
+.big_title3{
+  display: block;
+  width: 100%;
+  font-size: 5vh;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 5vh;
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+.big_title4{
+  background-image: url("../pic/index/bg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+  color: white;
+  padding-top: auto;
+  padding-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:25px;
+  position: relative;
+}
+
+.big_title4::before{
+	/* 透過した黒を重ねる */
+	background-color: rgba(0,0,0,0.5);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+.box{
+  position: absolute;
+  width: 100%;
   text-align: center;
+}
+
+.mini_title2{
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  background-color: yellow;
+  border: 5px solid black;
+  margin-bottom: 15px;
+}
+
+.fukidashi{
+  width:60%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.left{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.right{
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .paragraph span{
@@ -67,13 +164,17 @@ body{
 .big_paragraph{
   font-size: 35px;
   text-align: center;
-  font-family: "Noto Sans JP";
+  font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 .invitation{
   font-size: 35px;
   text-align: center;
-  font-family: "Noto Sans JP";
+  font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 
@@ -86,6 +187,16 @@ header{
   top: 0;
   z-index: 10;
   display: flex;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
 }
 
 .header_sp{
@@ -99,17 +210,22 @@ header{
 
 .menu{
   float: left;
-  font-size: 0;
+  font-size: 15;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu img{
-  padding-left: 25px;
-  display: block;
-  height: 15px;
+.menu a{
+  margin-left: 25px;
+  display: flex;
   background-color: black;
+}
+
+.menu_eng{
+  display: none;
+  font-size: 15;
+  padding-left: 10px;
 }
 
 .news{
@@ -121,17 +237,30 @@ header{
   position: fixed;
   top: 70px;
   z-index: 10;
+  display: flex;
+}
 
+.latest_news{
+  margin:0px;
+  margin-left: 25px;
+  margin-top: 8px;
+  display: block;
+  color: white;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  width: auto;
+  position: relative;
+  height: 23px;
 }
 
 .news a{
-  margin:0px;
-  padding-left: 25px;
-  padding-top: 8px;
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-family: "Sawarabi Mincho";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
 }
 
 /* メイン画像PC */
@@ -199,7 +328,9 @@ header{
 
 .last_year_circles p{
   font-size: 30px;
-  font-family: "Noto Sans JP";
+  font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 .last_year_circles img{
@@ -282,6 +413,9 @@ footer{
   color: white;
   margin: 0 auto;
   display: block;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .page_title img{
@@ -292,7 +426,9 @@ footer{
 
 .page_title_mini{
   font-size: 40px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
   text-align: center;
   border-bottom: solid 5px orange;
 }
@@ -421,7 +557,9 @@ footer{
   display: block;
   color: white;
   text-decoration: none;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .link_btn_black a{
@@ -446,7 +584,9 @@ button{
 
 .welcome{
   margin-top: 15px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 25px;
 }
 
@@ -466,7 +606,9 @@ button{
   margin:10px 0px 10px 20px;
   display: block;
   border-left: solid white 3px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
 
 }
 
@@ -502,7 +644,9 @@ button{
   display: block;
   color: white;
   text-decoration: none;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
@@ -520,13 +664,17 @@ button{
 
 .news_date {
   font-size: 20px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 10px 20px 0 20px;
 }
 
 .news_title {
   font-size: 40px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 0 20px 0 20px;
 }
 
@@ -553,7 +701,9 @@ button{
 
 .faq_question, .apply_list{
   font-size: 40px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 30px auto 0 auto;
   border-bottom: 1px solid #707070;
   width: 90%;
@@ -571,7 +721,9 @@ button{
   margin: 0 20px 10px 20px;
   width: 90%;
   margin: 0 auto;
-  font-family: "Noto Sans JP";
+  font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
   display: none;
 
 }
