@@ -728,9 +728,17 @@ font-style: normal;
 
 }
 
-.faq_question span, .op_cl{
+.op_cl{
   position: absolute;
   top: 5px;
   right: 5px;
   color:#ccc;
+}
+
+.q_num{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
