@@ -81,7 +81,7 @@ body{
 .big_title2{
   display: block;
   width: 100%;
-  font-size: 5vh;
+  font-size: 4vh;
   display: flex;
 }
 
@@ -122,10 +122,10 @@ body{
 	left: 0;
 	content: ' ';
 }
+
 .box{
   position: absolute;
   width: 100%;
-  text-align: center;
 }
 
 .mini_title2{
@@ -139,6 +139,33 @@ body{
   background-color: yellow;
   border: 5px solid black;
   margin-bottom: 15px;
+}
+
+.btn{
+  width:60%;
+  height: 80px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 80px;
+  position: relative;
+}
+
+.btn a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+}
+
+.red{
+  background-color: #CE4444;
+  color: white;
+}
+
+.indigo{
+  background-color: #4b0082;
+  color: white;
 }
 
 .fukidashi{
