@@ -1,29 +1,22 @@
 
+// loadingのdivを取得
+var loading = document.getElementById('black_wall');
+// contentsのdivを取得
+var contents = document.getElementById('index_contents');
+// 読み込みが完了したら
+window.addEventListener('load', function () {
+  // loadingのdivを非表示に
+  loading.style.display = 'none';
+  // contentsのdivを表示
+  contents.classList.remove('hidden');
+});
+
+
+
 $(function(){
   $(document).ready( function(){
     // ページ読み込み時に実行したい処理
 
-    if($(".wrapper").hasClass("for_index")) {
-      $(".wrapper").hide();
-
-      var rotation = function (){
-        $("#loading").rotate({
-          angle:0,
-          animateTo:360,
-          callback: rotation
-        });
-      }
-      rotation();
-
-      setTimeout(function(){
-        $(".black_wall").fadeOut();
-        $("#loading").fadeOut();
-        $(".wrapper").show();
-        $('.slider').slick('setPosition');
-      },1000);
-
-
-    };
 
     //開いた画面の高さを取得
     var WindowHeight = $(window).height();
