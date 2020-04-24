@@ -16,6 +16,14 @@ window.addEventListener('load', function () {
 $(function(){
   $(document).ready( function(){
     // ページ読み込み時に実行したい処理
+    var rotation = function (){
+      $("#loading").rotate({
+        angle:0,
+        animateTo:360,
+        callback: rotation
+      });
+    }
+    rotation();
 
 
     //開いた画面の高さを取得
