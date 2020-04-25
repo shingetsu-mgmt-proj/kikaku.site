@@ -1,0 +1,207 @@
+
+body{
+  margin: 0;
+}
+
+#black_wall{
+  background-color: #1E3C91;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: black;
+}
+
+#loading img{
+  z-index: 21;
+  width:100px;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.index_contents_2{
+  z-index: 10;
+  background-color: white;
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+}
+
+.index_contents{
+}
+
+.container{
+  max-width: 1000px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main_img{
+  height: 100vh;
+  overflow: hidden;
+  position:  fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.main_img img{
+  width: 100vw;
+  position: relative;
+}
+
+.main_logo{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.main_logo img{
+  width: 400px;
+  display: inline-block;
+}
+
+
+
+.faq_kikaku,.faq_mogi{
+}
+
+.faq_question, .apply_list{
+  font-size: 30px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 30px auto 0 auto;
+  border-bottom: 1px solid #707070;
+  width: 90%;
+  position: relative;
+}
+
+.faq_question p, .apply_list p{
+  margin: 0;
+  display: block;
+  width: 95%;
+}
+
+.faq_answer, .apply_process{
+  font-size: 20px;
+  margin: 0 20px 10px 20px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
+  display: none;
+
+}
+
+.op_cl{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color:#ccc;
+}
+
+.q_num{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.title{
+  background-image: url("../pic/title_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 200px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:25px;
+  position: relative;
+  z-index: 10;
+}
+
+.title::before{
+	/* 透過した黒を重ねる */
+	background-color: rgba(0,0,0,0.3);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+.box{
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
+
+.title_p{
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.message_box{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.message_photo{
+  width: 20%;
+}
+
+.message_photo img{
+  width: 100%;
+  padding: 7px;
+}
+
+.message_paragraph{
+  width: 75%;
+  padding: 0 20px 0 20px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+.message_paragraph span{
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
