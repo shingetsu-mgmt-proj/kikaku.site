@@ -6,8 +6,8 @@ body{
 #black_wall{
   background-color: #1E3C91;
   z-index: 20;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   display: black;
 }
@@ -34,15 +34,20 @@ body{
   margin: auto;
 }
 
-.index_contents_2{
+#index_contents_2{
   z-index: 10;
   background-color: white;
   position: absolute;
   top: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.index_contents{
+#index_contents{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  pointer-events:none;
 }
 
 .container{
@@ -52,30 +57,39 @@ body{
 }
 
 .main_img{
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position:  fixed;
   top: 0;
   z-index: -1;
 }
 
-.main_img img{
+.sp{
+  display: none;
+}
+
+.pc img{
   width: 100vw;
-  position: relative;
 }
 
 .main_logo{
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
+  z-index: 5;
 }
 
-.main_logo img{
+.pc_logo img{
   width: 400px;
   display: inline-block;
+}
+
+.sp_logo{
+  display: none;
 }
 
 
@@ -106,8 +120,8 @@ body{
   width: 90%;
   margin: 0 auto;
   font-family: kozuka-gothic-pr6n, sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-weight: 500;
+  font-style: normal;
   display: none;
 
 }
@@ -122,14 +136,13 @@ font-style: normal;
 .q_num{
   background-color: black;
   color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 
 .title{
-  background-image: url("../pic/title_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -144,6 +157,21 @@ font-style: normal;
   position: relative;
   z-index: 10;
 }
+
+.title_1{
+  background-image: url("../pic/title_bg.jpg");
+}
+
+.title_2{
+  background-image: url("../pic/title_bg_2.png");
+
+}
+
+.title_3{
+  background-image: url("../pic/title_bg_3.jpg");
+
+}
+
 
 .title::before{
 	/* 透過した黒を重ねる */
@@ -204,4 +232,40 @@ font-style: normal;
   font-weight: 600;
   font-style: normal;
   font-size: 30px;
+}
+
+.hidden{
+  display: none;
+}
+
+.pc_menu{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top:100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pc_menu p{
+  margin: 10px;
+  color: white;
+  position: relative;
+  z-index: 11;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.photo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.photo img{
+  width: 150px;
+  margin: 10px;
 }

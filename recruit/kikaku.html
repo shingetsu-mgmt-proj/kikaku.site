@@ -28,6 +28,7 @@
     <script src="../js/jQueryRotate.js"></script>
 
   </head>
+
   <body>
 
     <div id="black_wall">
@@ -36,16 +37,42 @@
       </div>
     </div>
 
-    <div id='index_contents'>
+    <div class="pc_menu">
+      <p class="menu_btn" id="jump_to_faq">FAQ</p>
+      <p class="menu_btn" id="jump_to_message">Message</p>
+      <p class="menu_btn" id="jump_to_gallery">Gallery</p>
+    </div>
+
+
+    <div id='index_contents' class="hidden">
       <div class="main_img">
-        <img src="pic/1.jpg" alt="">
+        <div class="pc">
+          <img src="pic/1.jpg" alt="">
+        </div>
+        <div class="sp">
+          <img src="pic/2.jpg" alt="">
+        </div>
         <div class="main_logo">
-          <img src="pic/logo.png" alt="">
+
+          <div class="pc_logo">
+            <img src="pic/logo.png" alt="">
+          </div>
+          <div class="sp_logo">
+            <img src="pic/logo_sp.png" alt="">
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="index_contents_2">
+    <div id="index_contents_2" class="hidden">
+
+      <div id="faq" class="title title_1">
+        <div class="box">
+            <p class="title_p">よくある質問/FAQ</p>
+        </div>
+      </div>
+
 
       <div class="faq_kikaku">
         <div class="container">
@@ -136,9 +163,9 @@
         </div>
       </div>
 
-      <div class="title">
+      <div id="message" class="title title_2">
         <div class="box">
-            <p class="title_p">部長からのメッセージ</p>
+            <p class="title_p">部長からのメッセージ/Message</p>
         </div>
       </div>
 
@@ -196,9 +223,36 @@
           </div>
         </div>
 
-
-
       </div>
+
+      <div id="gallery" class="title title_3">
+        <div class="box">
+            <p class="title_p">ギャラリー/Gallery</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="photo">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+          <img src="pic/g_1.jpg" alt="">
+
+        </div>
+      </div>
+
 
     </div>
 

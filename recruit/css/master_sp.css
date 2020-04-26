@@ -1,0 +1,86 @@
+
+@media (max-width: 670px){
+
+  .container{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .main_img{
+    height: 100vh;
+    overflow: hidden;
+    position:  fixed;
+    top: 0;
+    z-index: -1;
+  }
+
+  .pc{
+    display: none;
+  }
+
+  .sp{
+    display: block;
+    position: relative;
+  }
+
+  .sp img{
+    height: 100vh;
+    width: auto;
+    text-align: left;
+    margin-right: 0;
+  }
+
+  .main_logo{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+
+
+  .sp_logo{
+    display: inline-block;
+  }
+
+
+  .sp_logo img{
+    width: 200px;
+    display: inline-block;
+  }
+
+  .pc_logo{
+    display: none;
+  }
+
+  .faq_question, .apply_list{
+    font-size: 20px;
+  }
+
+  .faq_answer, .apply_process{
+    font-size: 15px;
+  }
+
+  .title{
+    height: 150px;
+  }
+
+
+  .pc_menu{
+    top:60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .pc_menu p{
+    margin: 10px;
+    color: #C1272D;
+    position: relative;
+    z-index: 11;
+  }
+
+
+
+}
