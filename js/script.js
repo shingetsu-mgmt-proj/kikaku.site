@@ -53,7 +53,7 @@ $(function(){
     } else {
       $answer.addClass("faq_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -66,7 +66,7 @@ $(function(){
     } else {
       $apply_process.addClass("apply_open");
       $apply_process.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -80,7 +80,7 @@ $(function(){
     } else {
       $answer.addClass("news_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 

@@ -92,6 +92,16 @@ $(function(){
     }
   );
 
+  $(".photo_img").click(function(){
+    var adress = $(this).attr('src');
+    $('.photo_big_img').attr('src',adress);
+    $('.photo_big').fadeIn();
+  });
+
+  $(".photo_big").click(function(){
+    $(".photo_big").fadeOut();
+  });
+
 
 
   $('.slider').slick('setPosition');
