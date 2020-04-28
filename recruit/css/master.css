@@ -54,6 +54,10 @@ body{
   max-width: 1000px;
   width: 60%;
   margin: 0 auto;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 .main_img{
@@ -104,7 +108,7 @@ body{
   font-style: normal;
   margin: 30px auto 0 auto;
   border-bottom: 1px solid #707070;
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -128,7 +132,7 @@ body{
 
 .op_cl{
   position: absolute;
-  top: 5px;
+  bottom: 3px;
   right: 5px;
   color:#ccc;
 }
@@ -171,6 +175,12 @@ body{
   background-image: url("../pic/title_bg_3.jpg");
 
 }
+
+.title_4{
+  background-image: url("../pic/title_bg_4.jpg");
+
+}
+
 
 
 .title::before{
@@ -232,7 +242,17 @@ body{
   font-weight: 600;
   font-style: normal;
   font-size: 30px;
+  border-bottom: 1px solid #c0c0c0;
 }
+
+.name_sp{
+  display: none;
+}
+
+.name_pc{
+  display: block;
+}
+
 
 .hidden{
   display: none;
@@ -258,6 +278,24 @@ body{
   font-style: normal;
 }
 
+.more{
+  display: none;
+}
+
+.more_btn{
+  width: 20%;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#less_btn{
+  display: none;
+}
+
+
 .photo{
   display: flex;
   flex-wrap: wrap;
@@ -266,8 +304,8 @@ body{
 }
 
 .photo img{
-  width: 150px;
-  margin: 10px;
+  width: 20%;
+  margin: 0.5%;
 }
 
 .photo_big{
@@ -290,4 +328,85 @@ body{
   left: 0;
   margin: auto;
 
+}
+
+footer{
+  background-color: #1b3988;
+  height: 150px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer img{
+  height: 50px;
+  margin: 0 auto 0 auto;
+  display: block;
+  padding-top: 40px;
+}
+
+.btn{
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 15px auto;
+  display: flex;
+  position: relative;
+
+}
+
+.btn p{
+  vertical-align: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btn a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+
+}
+
+.twitter_blue{
+  background-color: #00acee;
+  color: white;
+}
+
+.instagram_pink{
+  background-color: #dc143c;
+  color: white;
+
+}
+
+.red{
+  background-color: #dc143c;
+  color: white;
+}
+
+.blue{
+  background-color: #87ceeb;
+  color: black;
+}
+
+.twitter-tweet{
+  margin: 0 auto;
+}
+
+video{
+  margin: 5px;
+  width: 45%;
+  text-align: center;
+}
+
+.videos{
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }

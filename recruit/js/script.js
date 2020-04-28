@@ -31,11 +31,18 @@ $(function(){
 
 
     //開いた画面の高さを取得
-    var WindowHeight = $(window).height();
-    var Height = WindowHeight - 70; //WindowHeightは変数で任意の名前
-    $('.wrapper').css('min-height',Height+'px');
 
 
+    if (window.matchMedia( "(max-width: 670px)" ).matches) {
+    /* ウィンドウサイズが 768px以下の場合のコードをここに */
+
+    } else {
+    /* ウィンドウサイズが 768px以上の場合のコードをここに */
+      var WindowHeight = $(window).height();
+      var Height = WindowHeight - 70; //WindowHeightは変数で任意の名前
+      $('.wrapper').css('min-height',Height+'px');
+
+    }
 
   });
 
@@ -48,7 +55,7 @@ $(function(){
     } else {
       $answer.addClass("faq_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -101,6 +108,19 @@ $(function(){
   $(".photo_big").click(function(){
     $(".photo_big").fadeOut();
   });
+
+  $("#more_btn").click(function(){
+    $(".more").slideDown();
+    $(this).fadeOut();
+    $("#less_btn").fadeIn();
+  });
+
+  $("#less_btn").click(function(){
+    $(".more").slideUp();
+    $(this).fadeOut();
+    $("#more_btn").fadeIn();
+  });
+
 
 
 
