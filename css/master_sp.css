@@ -363,13 +363,23 @@
     font-size: 20px;
   }
 
-  .faq_question span, .op_cl{
+  .op_cl{
     position: absolute;
     top: 2px;
     right: 3px;
     color:#ccc;
     font-size: 25px;
   }
+
+  .table_cell_1{
+    width: 40%;
+    text-align: center;
+  }
+
+  .table_cell_2{
+    width: 60%;
+  }
+
 
 
 }

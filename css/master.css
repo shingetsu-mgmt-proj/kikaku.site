@@ -796,3 +796,16 @@ font-style: normal;
 .hidden{
   display: none;
 }
+
+.table_line{
+  display: flex;
+}
+
+.table_cell_1{
+  width: 25%;
+  text-align: center;
+}
+
+.table_cell_2{
+  width: 80%;
+}
