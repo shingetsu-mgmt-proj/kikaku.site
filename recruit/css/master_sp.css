@@ -147,7 +147,7 @@
   }
 
   .videos{
-    flex-direction: column
+    flex-direction: column;
   }
 
   video{
@@ -159,7 +159,19 @@
     width: 80%;
   }
 
+  .table_line{
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
+    border-bottom: 1px solid #c0c0c0;
+
+  }
+
+  .table_cell_2{
+    width: 100%;
+  
+  }
 
 
 

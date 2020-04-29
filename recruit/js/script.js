@@ -77,6 +77,24 @@ $(function(){
     });
   });
 
+  $("#jump_to_activities").click(function(){
+    var position = $("#activities").offset().top;
+    $('html,body').animate({
+      'scrollTop':position
+    },{
+      queue : false
+    });
+  });
+
+  $("#jump_to_apply").click(function(){
+    var position = $("#apply").offset().top;
+    $('html,body').animate({
+      'scrollTop':position
+    },{
+      queue : false
+    });
+  });
+
   $("#jump_to_gallery").click(function(){
     var position = $("#gallery").offset().top;
     $('html,body').animate({
@@ -85,6 +103,7 @@ $(function(){
       queue : false
     });
   });
+
 
 
   $(".menu_btn").hover(
@@ -120,6 +139,19 @@ $(function(){
     $(this).fadeOut();
     $("#more_btn").fadeIn();
   });
+
+  $("#more_btn_ac").click(function(){
+    $(".more_ac").slideDown();
+    $(this).fadeOut();
+    $("#less_btn_ac").fadeIn();
+  });
+
+  $("#less_btn_ac").click(function(){
+    $(".more_ac").slideUp();
+    $(this).fadeOut();
+    $("#more_btn_ac").fadeIn();
+  });
+
 
 
 

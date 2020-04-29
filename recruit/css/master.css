@@ -181,7 +181,10 @@ body{
 
 }
 
+.title_5{
+  background-image: url("../pic/title_bg_5.jpg");
 
+}
 
 .title::before{
 	/* 透過した黒を重ねる */
@@ -282,6 +285,10 @@ body{
   display: none;
 }
 
+.more_ac{
+  display: none;
+}
+
 .more_btn{
   width: 20%;
   height: 30px;
@@ -291,7 +298,7 @@ body{
   text-align: center;
 }
 
-#less_btn{
+#less_btn,#less_btn_ac{
   display: none;
 }
 
@@ -409,4 +416,37 @@ video{
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+.table_line{
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border-bottom: 1px solid #c0c0c0;
+
+}
+
+.table_cell_1{
+  width: 35%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_cell_1 p{
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  display: block;
+}
+
+.table_cell_2{
+  width: 80%;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
