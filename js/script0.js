@@ -280,6 +280,14 @@ $(function(){
     }
   );
 
+  $(".continue_btn").click(function(){
+    alert('大学祭基調へ賛同します')
+
+    $(".continue").slideDown();
+    $(this).hide();
+  });
+
+
 
 
   $('.slider').slick('setPosition');

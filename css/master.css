@@ -45,7 +45,7 @@ body{
 }
 
 .paragraph{
-  font-size: 30px;
+  font-size: 1em;
   font-family: kozuka-gothic-pr6n, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -61,7 +61,7 @@ body{
 }
 
 .paragraph_serif{
-  font-size: 25px;
+  font-size: 1em;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -172,6 +172,10 @@ body{
 .black{
   background-color: black;
   color: white;
+}
+
+.gray{
+  background-color: #d3d3d3;
 }
 
 .fukidashi{
@@ -647,7 +651,7 @@ button{
 .mini_title{
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 1.3em;
   color: black;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -813,4 +817,22 @@ font-style: normal;
 
 .table_cell_2{
   width: 80%;
+}
+
+.continue_btn{
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin: 20px auto 20px auto;
+  font-size: 1.4em;
+  border-radius: 5px;
+}
+
+.continue{
+  display: none;
+}
+
+iframe{
+  width: 100%;
 }
