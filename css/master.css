@@ -836,3 +836,9 @@ font-style: normal;
 iframe{
   width: 100%;
 }
+
+.line_qr{
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
