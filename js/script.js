@@ -1,29 +1,30 @@
 
+// loadingのdivを取得
+var loading = document.getElementById('black_wall');
+// contentsのdivを取得
+var contents = document.getElementById('index_contents');
+// 読み込みが完了したら
+window.addEventListener('load', function () {
+  // loadingのdivを非表示に
+  loading.style.display = 'none';
+  // contentsのdivを表示
+  contents.classList.remove('hidden');
+});
+
+
+
 $(function(){
   $(document).ready( function(){
     // ページ読み込み時に実行したい処理
+    var rotation = function (){
+      $("#loading").rotate({
+        angle:0,
+        animateTo:360,
+        callback: rotation
+      });
+    }
+    rotation();
 
-    if($(".wrapper").hasClass("for_index")) {
-      $(".wrapper").hide();
-
-      var rotation = function (){
-        $("#loading").rotate({
-          angle:0,
-          animateTo:360,
-          callback: rotation
-        });
-      }
-      rotation();
-
-      setTimeout(function(){
-        $(".black_wall").fadeOut();
-        $("#loading").fadeOut();
-        $(".wrapper").show();
-        $('.slider').slick('setPosition');
-      },1000);
-
-
-    };
 
     //開いた画面の高さを取得
     var WindowHeight = $(window).height();
@@ -53,7 +54,7 @@ $(function(){
     } else {
       $answer.addClass("faq_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("－");
+      $(this).find(".op_cl").text("-");
     }
   });
 
@@ -66,7 +67,7 @@ $(function(){
     } else {
       $apply_process.addClass("apply_open");
       $apply_process.slideDown();
-      $(this).find(".op_cl").text("－");
+      $(this).find(".op_cl").text("-");
     }
   });
 
@@ -80,7 +81,7 @@ $(function(){
     } else {
       $answer.addClass("news_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("－");
+      $(this).find(".op_cl").text("-");
     }
   });
 
@@ -278,6 +279,17 @@ $(function(){
       },500);
     }
   );
+
+  $(".continue_btn").click(function(){
+    alert('大学祭基調へ賛同します')
+
+    $(".continue").slideDown();
+    $(this).hide();
+  });
+
+  $(".out_of_term").click(function(){
+    alert('期間外です。受付期間をご確認ください。')
+  });
 
 
 
