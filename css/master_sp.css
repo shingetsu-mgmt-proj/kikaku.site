@@ -257,20 +257,17 @@
   }
 
   .mini_title{
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   .page_title_mini{
-    font-size: 30px;
-    font-family: "Sawarabi Mincho";
+    font-size: 1.5em;
+    font-family: a-otf-ryumin-pr6n, serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: left;
     border-bottom: solid 2px orange;
   }
-
-  .page_title_mini span{
-    font-size: 15px;
-  }
-
 
   .schedule img{
     width: 90%;
@@ -365,7 +362,7 @@
 
   .op_cl{
     position: absolute;
-    top: 2px;
+    bottom: 1px;
     right: 3px;
     color:#ccc;
     font-size: 25px;

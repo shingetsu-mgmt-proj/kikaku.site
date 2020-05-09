@@ -1,39 +1,46 @@
-
-// loadingのdivを取得
-var loading = document.getElementById('black_wall');
-// contentsのdivを取得
-var contents = document.getElementById('index_contents');
-// 読み込みが完了したら
-window.addEventListener('load', function () {
-  // loadingのdivを非表示に
-  loading.style.display = 'none';
-  // contentsのdivを表示
-  contents.classList.remove('hidden');
-});
+var eco = 0;
 
 
 
 $(function(){
+
   $(document).ready( function(){
     // ページ読み込み時に実行したい処理
-    var rotation = function (){
-      $("#loading").rotate({
-        angle:0,
-        animateTo:360,
-        callback: rotation
-      });
+    if ($('.wrapper').hasClass('for_index')) {
+      var rotation = function (){
+        $("#loading").rotate({
+          angle:0,
+          animateTo:360,
+          callback: rotation
+        });
+      }
+      rotation();  
     }
-    rotation();
 
 
     //開いた画面の高さを取得
     var WindowHeight = $(window).height();
+    var WindowWidth = $(window).width();
+
     var Height = WindowHeight - 70; //WindowHeightは変数で任意の名前
-    $('.wrapper').css('min-height',Height+'px');
-
-
-
+    if (WindowWidth >= 670) {
+      $('.wrapper').css({
+        'min-height': Height+'px'
+      });  
+    }
   });
+
+  $(window).on('load',function(){
+    $("#black_wall").delay(1000).fadeOut('slow');
+    $("#index_contents").fadeIn('slow');
+    
+  });
+  function loaderClose(){
+    $("#black_wall").fadeOut('slow');
+    $("#index_contents").fadeIn('slow');
+  }
+  setTimeout(loaderClose,10000);
+
 
   $(".header_sp").click(function(){
     $(".menu_sp").fadeIn();
@@ -54,7 +61,7 @@ $(function(){
     } else {
       $answer.addClass("faq_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -67,7 +74,7 @@ $(function(){
     } else {
       $apply_process.addClass("apply_open");
       $apply_process.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -81,7 +88,7 @@ $(function(){
     } else {
       $answer.addClass("news_open");
       $answer.slideDown();
-      $(this).find(".op_cl").text("-");
+      $(this).find(".op_cl").text("－");
     }
   });
 
@@ -281,11 +288,29 @@ $(function(){
   );
 
   $(".continue_btn").click(function(){
-    alert('大学祭基調へ賛同します')
+    alert('大学祭基調へ賛同し、学生企画規則へ同意します。')
 
     $(".continue").slideDown();
     $(this).hide();
+
   });
+
+  $("#link_eco").click(function(){
+    eco = 1;
+  });
+
+
+
+  $(".continue_2_btn").click(function(){
+    if (eco==1) {
+      alert('三田エコプロジェクトの内容を参加し、学生企画規則へ同意します。')
+      $(".continue_2").slideDown();
+      $(this).hide();
+    } else {
+      alert('三田エコプロジェクトの内容をリンクより確認して下さい。')
+    };
+  });
+
 
   $(".out_of_term").click(function(){
     alert('期間外です。受付期間をご確認ください。')
@@ -297,9 +322,9 @@ $(function(){
 
 
 
-});
 
 $('.slider').slick({
   autoplay:true,
   autoplaySpeed:3000,
 });
+})

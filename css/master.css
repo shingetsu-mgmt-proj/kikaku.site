@@ -57,7 +57,7 @@ body{
 }
 
 .mini{
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .paragraph_serif{
@@ -89,7 +89,7 @@ body{
 .big_title3{
   display: block;
   width: 100%;
-  font-size: 5vh;
+  font-size: 3em;
   font-family: kozuka-gothic-pr6n, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -146,7 +146,7 @@ body{
   width:60%;
   height: 80px;
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 1.3em;
   line-height: 80px;
   position: relative;
 }
@@ -199,19 +199,19 @@ body{
 }
 
 .big_paragraph{
-  font-size: 35px;
+  font-size: 1.3em;
   text-align: center;
   font-family: kozuka-gothic-pr6n, sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .invitation{
-  font-size: 35px;
+  font-size: 1.3em;
   text-align: center;
   font-family: kozuka-gothic-pr6n, sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
@@ -261,7 +261,7 @@ header a{
 
 .menu_eng{
   display: none;
-  font-size: 15;
+  font-size: 15px;
   padding-left: 10px;
 }
 
@@ -356,25 +356,6 @@ header a{
   margin: 0 auto
 }
 
-.last_year_circles{
-  flex: auto;
-  width: 50%;
-  text-align: center;
-
-}
-
-.last_year_circles p{
-  font-size: 30px;
-  font-family: kozuka-gothic-pr6n, sans-serif;
-font-weight: 500;
-font-style: normal;
-}
-
-.last_year_circles img{
-  width:100%;
-  margin-right: 70px;
-}
-
 /*模擬と企画の違いについて*/
 .about_mogi_and_kikaku{
   display: flex;
@@ -462,16 +443,12 @@ footer{
 }
 
 .page_title_mini{
-  font-size: 40px;
+  font-size: 2em;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
   text-align: center;
   border-bottom: solid 5px orange;
-}
-
-.page_title_mini span{
-  font-size: 25px;
 }
 
 .schedule{
@@ -486,9 +463,6 @@ footer{
 }
 
 /*申し込み*/
-.please_select,.please_select_2{
-  margin-top:30px;
-}
 
 .please_select_2{
   display: none;
@@ -565,7 +539,7 @@ footer{
   margin: 5px 0 5px 0;
   border: 1px solid #c0c0c0;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1em;
   padding: 10px;
 
 }
@@ -606,7 +580,7 @@ footer{
   margin: 0 auto;
   display: block;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.5em;
   position: relative;
   border-radius: 5px;
 }
@@ -694,7 +668,7 @@ button{
   margin: 0 auto;
   display: block;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.5em;
   background-color: black;
   color: white;
 }
@@ -722,7 +696,7 @@ button{
 }
 
 .news_date {
-  font-size: 20px;
+  font-size: 0.8em;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -730,7 +704,7 @@ button{
 }
 
 .news_title {
-  font-size: 40px;
+  font-size: 1.5em;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -738,7 +712,7 @@ button{
 }
 
 .news_content {
-  font-size: 20px;
+  font-size: 1em;
   margin: 0 20px 10px 20px;
   display: none;
   font-family: "Noto Sans JP"
@@ -748,7 +722,7 @@ button{
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 30px;
+  font-size: 1.5em;
   color:#ccc;
 }
 
@@ -759,13 +733,13 @@ button{
 }
 
 .faq_question, .apply_list{
-  font-size: 40px;
+  font-size: 2em;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
   margin: 30px auto 0 auto;
   border-bottom: 1px solid #707070;
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -776,20 +750,20 @@ button{
 }
 
 .faq_answer, .apply_process{
-  font-size: 20px;
+  font-size: 1em;
   margin: 0 20px 10px 20px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-family: kozuka-gothic-pr6n, sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-weight: 500;
+  font-style: normal;
   display: none;
 
 }
 
 .op_cl{
   position: absolute;
-  top: 5px;
+  bottom: 3px;
   right: 5px;
   color:#ccc;
 }
@@ -819,7 +793,7 @@ font-style: normal;
   width: 80%;
 }
 
-.continue_btn{
+.continue_btn,.continue_2_btn{
   width: 300px;
   height: 60px;
   text-align: center;
@@ -833,6 +807,10 @@ font-style: normal;
   display: none;
 }
 
+.continue_2{
+  display: none;
+}
+
 iframe{
   width: 100%;
 }
@@ -842,3 +820,15 @@ iframe{
   display: block;
   width: 50%;
 }
+
+.bold{
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+.under {
+  text-decoration: underline;
+}
+
