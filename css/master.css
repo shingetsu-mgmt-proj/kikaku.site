@@ -16,11 +16,20 @@ body{
 #black_wall{
   background-color: #1E3C91;
   z-index: 20;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: relative;
   display: black;
+
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
 }
+
+#black_wall::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
 
 #loading img{
   z-index: 21;
@@ -389,7 +398,6 @@ header a{
   padding-bottom: 230px;
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
-
 
 footer{
   width: 100%;

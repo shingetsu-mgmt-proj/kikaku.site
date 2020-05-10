@@ -32,7 +32,7 @@ $(function(){
 
   $(window).on('load',function(){
     $("#black_wall").delay(1000).fadeOut('slow');
-    $("#index_contents").fadeIn('slow');
+    $("#index_contents").delay(1000).fadeIn('slow');
     
   });
   function loaderClose(){
@@ -318,13 +318,4 @@ $(function(){
 
 
 
-  $('.slider').slick('setPosition');
-
-
-
-
-$('.slider').slick({
-  autoplay:true,
-  autoplaySpeed:3000,
-});
 })
