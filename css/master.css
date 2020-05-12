@@ -460,6 +460,10 @@ footer{
   border-bottom: solid 5px orange;
 }
 
+.page_title_mini span{
+  color: red;
+}
+
 .schedule{
   margin-top: 20px;
 }
@@ -841,3 +845,6 @@ iframe{
   text-decoration: underline;
 }
 
+.hide{
+  display: none;
+}
