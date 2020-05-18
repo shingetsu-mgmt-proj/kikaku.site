@@ -316,7 +316,6 @@ $(function(){
     alert('期間外です。受付期間をご確認ください。')
   });
 
-  $('.news').dotdotdot();
 
 
 
