@@ -314,6 +314,11 @@ header a{
 .slider{
   width: 100vw;
   object-fit: cover;
+  margin-bottom: 0;
+}
+
+.main_img_pc{
+  position: relative;
 }
 
 .main_img_pc_bg{
@@ -847,4 +852,16 @@ iframe{
 
 .hide{
   display: none;
+}
+
+
+.em_news{
+  width: 100%;
+  height: auto;
+  background-color: #C7BA00;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 3em;
 }
