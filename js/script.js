@@ -316,6 +316,16 @@ $(function(){
     alert('期間外です。受付期間をご確認ください。')
   });
 
+  $(".photo_big").fadeIn('slow');
+
+  $("#photo_close_btn").click(function(){
+    $('.photo_big').fadeOut();
+  });
+
+  $('.photo_big_img').click(function(){
+    window.location.href = "https://shingetsu-mgmt.github.io/kikaku-mogi.site/covid";
+  });
+
 
 
 

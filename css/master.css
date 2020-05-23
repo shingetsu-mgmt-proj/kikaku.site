@@ -390,6 +390,10 @@ header a{
 
 }
 
+.container span{
+  color: red;
+}
+
 .apply_btn img{
   margin:0 auto;
   display:block;
@@ -865,3 +869,39 @@ iframe{
   color: white;
   font-size: 3em;
 }
+
+.photo_big{
+  background-color: rgba(0,0,0,0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 25;
+}
+
+.photo_big_img{
+  max-width: 1000px;
+  width: 40vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+}
+
+#photo_close_btn{
+  width: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  margin: auto;
+}
+
+summary{
+  font-size: 1.3em;
+}
+
