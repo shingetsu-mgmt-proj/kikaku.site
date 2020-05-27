@@ -318,7 +318,7 @@ $(function(){
 
   $(".photo_big").fadeIn('slow');
 
-  $("#photo_close_btn").click(function(){
+  $(".photo_big").click(function(){
     $('.photo_big').fadeOut();
   });
 
