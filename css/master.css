@@ -905,3 +905,7 @@ summary{
   font-size: 1.3em;
 }
 
+#award{
+  display: block;
+  margin: 0 auto;
+}
