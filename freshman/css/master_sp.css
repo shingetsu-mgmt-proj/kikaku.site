@@ -1,0 +1,288 @@
+
+@media (max-width: 1000px){
+
+  .container{
+    width: 90vw;
+  }
+  
+  
+  .page_title_background{
+    height: 10em;
+  }  
+  
+  .page_title{
+    padding-top: 3em;
+  }
+
+  .page_title_p{
+    display: block;
+    margin: auto;
+    color: white;
+    line-height: 15vh;
+    font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    z-index: 10;
+  }
+
+  .header_2{
+    display: block;
+  }
+  
+  header{
+    display: none;
+  }
+
+  .header_2_top_menu{
+    display: none;
+  }
+
+  .header_2_menu_button{
+    position: absolute;
+    right: 0.5em;
+    top: 0.7em;
+    display: block;
+  }
+
+  .header_2_logo{
+    position: absolute;
+    left: 0.5em;
+    top: 0.7em;
+    display: block;
+  }
+
+  .header_2_logo img{
+    height: 3vh;
+  }
+
+
+  .header_2_menu_button img{
+    height: 2vh;
+  }
+
+  .index_pic_pc{
+    display: none;
+  }
+
+  .index_pic_sp {
+    display: block;
+    height: 100vh;
+    position: relative;
+  }
+
+  .index_pic_sp{
+    position: absolute;
+    right: 0;
+  }
+
+  .index_pic_catchcopy{
+    display: none;
+  }
+
+  .index_pic_catchcopy_sp{
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,255,0),black);
+  }
+
+  .index_pic_catchcopy_sp p{
+    position: absolute;
+    left: 5vw;
+    bottom: 15vh;
+    font-size: 3em;
+    font-family: kinuta-maruminold-stdn,serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+  }
+
+  .index_news{
+    width: 90%;
+  }  
+  
+  .footer_top_logo img{
+    width: 10em;
+  }
+  
+  .footer_bottom_logo img{
+    width: 10em;
+  }
+  
+  /*インデックスービデオ*/
+  .index_video{
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .index_video iframe{
+    margin: 0 auto;  
+    width: 90vw;
+    height: calc(90vw * 0.56);
+  }
+
+  .organization_division_menu{
+    height: 65vh;
+    flex-wrap: wrap;
+  }
+
+  .organization_division{
+    width:100%;
+    height: 23%;  
+  }
+  
+  .organization_division_name{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+    margin:0;
+    padding-left: 5px;
+    border-left: solid 5px white;
+  }
+
+  .organization_division_chief{
+    font-size: 2vh;
+    position: absolute;
+    top: auto;
+    left: 1rem;
+    right: auto;
+    bottom: 1rem;
+    margin: auto;
+    width: 80%;
+    display: block;
+    text-align: left;
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  .organization_division img{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: auto;
+    right: 1rem;
+    margin: auto;
+    width: 20vw;
+  }
+  
+  .division_container{
+    width:90vw;
+    height: 85vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    justify-content: center;
+  }
+
+  .division_detail_name{
+    width: 90%;
+    margin: 2vh auto auto auto;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  
+  }
+
+  .division_detail_name p{
+    font-size: 1.5em;
+  } 
+  
+  
+  .division_container_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70%;
+    
+  }
+
+  .division_detail_img{
+    display: none;
+  }
+
+  .division_detail_img img{
+    display: none;
+  }
+
+  
+  .division_detail_img_sp{
+    display:inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+  .division_detail_img_sp img{
+    display:inline-block;
+
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    margin: auto auto 20px auto;
+  }
+
+  .division_detail_description{
+    background-color: white;
+    width: 90%;
+    height: 70%;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  
+  }
+  
+  .division_detail_paragraph{
+    color: black;
+    margin: 20px;
+    font-size: 1em;
+  }
+  
+  .about_chairman_detail_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  #about_chairman_img{
+    display: none;
+  }
+
+  #about_chairman_img_sp{
+    display: block;
+  }
+  
+  .about_chairman_detail_container img{
+    width: 100%;
+    display: block;
+    margin: 5px 0 10pz 0;
+  }
+    
+  .about_chairman_intervew{
+    width: 100%;
+  }
+  
+  .about_chairman_intervew p{
+    margin: 5px 0 0 0;
+    display: block;
+  }
+  
+
+
+
+}

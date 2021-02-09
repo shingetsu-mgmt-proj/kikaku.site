@@ -1,0 +1,623 @@
+html,body { height:100%; }
+
+html{
+  overflow-x: auto;
+}
+
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  font-family: a-otf-midashi-go-mb31-pr6n,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #dcdcdc;
+}
+
+/*共通項目*/
+.container{
+  width: 70vw;
+  color: black;
+  margin: 0 auto;
+}
+
+.paragraph{
+  font-size: 1.2em;
+}
+
+.wrapper{
+  min-height: 100vh;
+
+  position: relative;/*←相対位置*/
+  padding-bottom: 10em;
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+.box{
+  height: 100vh;
+  position: relative;
+}
+
+.header_margin{
+  margin-top: 0vh;
+}
+
+.page_title_background{
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  border-bottom: ridge 1px #c0c0c0;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+  position: relative;
+}
+
+.page_title_background::before{
+	/* 透過した黒を重ねる */
+	background-color: rgba(0,0,0,0.3);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+
+.page_title{
+  padding-top: 20vh;
+  position: absolute;
+  width: 100%;
+}
+
+.page_title_p{
+  display: block;
+  margin: auto;
+  color: white;
+  line-height: 15vh;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  z-index: 10;
+}
+
+.button{
+  width: 60%;
+  height: 4em;
+  border-radius: 20px;
+  margin:0 auto;
+  position: relative;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  line-height: 4em;
+  text-align: center;
+  z-index: 2;
+}
+
+/*色*/
+.line_green{
+  background-color: #00B900;
+  color: white;
+}
+
+.red_1{
+  background-color:#66161a;
+  color: white;
+
+}
+
+.red_2{
+  background-color:#992228;
+  color: white;
+
+}
+
+.red_3{
+  background-color:#cc2d35;
+  color: white;
+
+}
+
+.red_4{
+  background-color:#ff3842;
+  color: white;
+
+}
+
+
+/*ヘッダー*/
+header{
+  height: 20vh;
+  background: linear-gradient(to right, #1E3C91,black);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  color: black;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.header_top_container{
+  height: calc(20vh * 0.7);
+  width: 100%;
+  border-bottom: ridge 3px #FFF000;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.header_top_logo img{
+  display: block;
+  width: 18vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.header_top_menu{
+  position: absolute;
+  bottom: 0;
+  margin-left: 20vw;
+}
+
+.header_top_menu li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 2em;
+  font-family: a-otf-ryumin-pr6n,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1em;
+  color: white;
+}
+
+.header_top_menu a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.header_bottom_container{
+  width: 100%;
+  z-index: 3;
+  position: relative;
+
+}
+
+.header_bottom_logo img{
+  display: block;
+  width: 18vw;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+}
+
+/*ヘッダー_2*/
+
+.header_2{
+  height: 3em;
+  background: linear-gradient(to right, #1E3C91,black);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  color: black;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  display: none;
+}
+
+.header_2_top_container{
+  height: calc(3em * 0.8);
+  width: 100%;
+  border-bottom: ridge 3px #FFF000;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.header_2_logo{
+  display: none;
+}
+
+.header_2_top_menu li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 1em;
+  font-family: a-otf-ryumin-pr6n,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  color: white;
+  line-height: 0;
+}
+
+.header_2_top_menu a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.header_2_menu_button{
+  display: none;
+}
+
+.header_2_top_menu{
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+}
+
+/*ハンバーガーメニュー*/
+.hamburger_menu{
+  width: 100vw;
+  height: calc(100vh - 3em);
+  position: fixed;
+  top: 3em;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+
+.hamburger_menu_container{
+
+}
+
+.hamburger_menu_list{
+  width: 100vw;
+  border-bottom: ridge 1px white;
+  height: 5em;
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+}
+
+.hamburger_menu_list a{
+  color: white;
+  font-family: fot-udkakugo-large-pr6n,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: block;
+  margin-left: 1.5em;
+  text-decoration: white;
+}
+
+.hamburger_menu_list span{
+  font-size:0.5em;
+}
+
+
+
+/*インデックス写真*/
+.index_pic{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.index_pic_pc{
+  width: 100vw;
+}
+
+.index_pic_sp{
+  display: none;
+}
+
+.index_pic_catchcopy{
+  display: block;
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0,0,255,0),black)
+}
+
+.index_pic_catchcopy p{
+  position: absolute;
+  right: 20vw;
+  top: 40vh;
+  font-size: 5em;
+  font-family: kinuta-maruminold-stdn,serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+}
+
+.index_pic_catchcopy_sp{
+  display: none;
+
+}
+
+/*インデックスーニュース*/
+.index_background{
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index_news{
+  width: 50em;
+  background-color: white;
+  margin: 2em auto 2em auto;
+  border-radius: 20px;
+  padding-bottom: 1em;
+}
+
+.index_news_title{
+  font-size: 2em;
+  font-family: fot-udkakugo-large-pr6n,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0.5em auto 0.5em auto;
+  text-align: center;
+}
+
+.index_news_link{
+  margin: 0 0 0.2em 2em;
+}
+
+/*インデックスービデオ*/
+.index_video{
+  width: 50em;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.index_video iframe{
+  margin: 0 auto;  
+  width: 50em;
+  height: calc(50em * 0.56);
+}
+
+/*フッター*/
+footer{
+  background-color: black;
+  width: 100vw;
+  height: 10em;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+
+}
+
+.footer_top_container{
+  height: calc(10em * 0.5);
+  width: 100%;
+  border-bottom: ridge 3px white;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.footer_top_logo img{
+  display: block;
+  width: 15em;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2em;
+}
+
+
+.footer_bottom_container{
+  width: 100%;
+  z-index: 3;
+  position: relative;
+}
+
+.footer_bottom_logo img{
+  display: block;
+  width: 15em;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 2em;
+}
+
+/*大学祭総部について*/
+#page_title_about{
+  background-image: url("../pic/title/about.jpg");
+}
+
+.about_chairman_name{
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+  border-bottom: ridge 3px black;
+}
+
+.about_chairman_name span{
+  font-size: 1rem;
+}
+
+
+.about_chairman{
+  font-family: tbnpmincho-std,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+
+/*組織について*/
+.organization_division_menu{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 55vh;
+  margin-bottom: 5vh;
+  margin-top:5vh;
+}
+
+.organization_division{
+  width:23%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.organization_division:hover{
+	opacity: 0.5;
+}
+
+
+.organization_division_name{
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+  margin:0;
+  padding-left: 5px;
+  border-left: solid 5px white;
+}
+
+.organization_division_chief{
+  font-size: 2vh;
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  display: block;
+  text-align: center;
+  font-family: tbnpmincho-std,serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.organization_division img{
+  position: absolute;
+  bottom: 2.5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+}
+
+.division_container{
+  width:70vw;
+  height: 85vh;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.division_detail_name{
+  width: 40%;
+  margin: 5vh auto auto 4vh;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.division_detail_name p{
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+  color: black;
+  text-align: center;
+} 
+
+.division_container_2{
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 70%;
+}
+
+.division_detail_img{
+  width: 35%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  overflow: hidden;
+}
+
+.division_detail_img img{
+  width: 100%;
+  border-radius: 40px;
+}
+
+.division_detail_img_sp{
+  display: none;
+}
+
+.division_detail_img_sp img{
+  display: none;
+}
+
+
+
+.division_detail_description{
+  background-color: white;
+  width: 55%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.division_detail_paragraph{
+  color: black;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+.about_chairman_detail_container{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+}
+
+#about_chairman_img{
+  display: block;
+}
+
+.about_chairman_detail_container img{
+  width: 40%;
+  display: block;
+  margin: 10px 5px 0 0;
+}
+
+#about_chairman_img_sp{
+  display: none;
+}
+
+.about_chairman_intervew{
+  width: 60%;
+}
+
+.about_chairman_intervew p{
+  margin: 10px 0 0 5px;
+  display: block;
+  font-family: tbnpmincho-std,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+}
